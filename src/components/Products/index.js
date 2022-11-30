@@ -15,7 +15,7 @@ const Products = () => {
                 err.message = 'Error! Could not resolve promise.';
             });
     }, []);
-    
+
     return (
         <>
             {
