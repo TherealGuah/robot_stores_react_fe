@@ -5,24 +5,16 @@ const Product = (props) => {
         id,
         title,
         price,
-        image ,
-        category_id,
-        category,
-        character_id,
-        character,
-        description,
-        image2,
-        image3
+        image,
     } = props.product;
 
     return (
         <li id={id}>
-            <h2>{title}</h2>
-            <p>{price}</p>
-            <img src={image} alt='product'/>
-            <p className={category_id}>{category}</p>
-            <p className={character_id}>{character}</p>
-            <p>{description}</p>
+            <a href="">
+                <img src={image} alt='product'/>
+                <h3>{title}</h3>
+                <p>{price}</p>
+            </a>
         </li>
     );
 };
