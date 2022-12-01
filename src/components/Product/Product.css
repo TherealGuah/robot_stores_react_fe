@@ -1,3 +1,13 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 li {
     list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
