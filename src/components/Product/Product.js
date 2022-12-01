@@ -1,17 +1,19 @@
+import './Product.css';
+
 const Product = (props) => {
     let {
-            id,
-            title,
-            price,
-            image ,
-            category_id,
-            category,
-            character_id,
-            character,
-            description,
-            image2,
-            image3
-        } = props.product;
+        id,
+        title,
+        price,
+        image ,
+        category_id,
+        category,
+        character_id,
+        character,
+        description,
+        image2,
+        image3
+    } = props.product;
 
     return (
         <li id={id}>
