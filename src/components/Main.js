@@ -1,6 +1,7 @@
-import Products from './Products/index';
-import Header from './Header/index';
-import Footer from './Footer/index';
+import Products from './Products/Products';
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
+import 'src/components/index.module.css';
 
 const Main = () => {
     return (
