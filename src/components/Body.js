@@ -1,17 +1,21 @@
 import Products from './Products/Products';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
-import './Main.css';
+import './Body.css';
 
-const Main = () => {
+const Body = () => {
     return (
         <>
             <Header />
-            <Products />
+
+            <main>
+                <Products />
+            </main>
+
             <Footer />
         </>
     );
 };
 
-export default Main;
+export default Body;
 
