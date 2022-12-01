@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchProducts } from '../../utils/apiRequests';
-import Product from '../Product/index';
+import Product from '../Product/Product';
+import './Products.css';
 
 const Products = () => {
     // state setter and getter
@@ -17,7 +18,7 @@ const Products = () => {
     }, []);
 
     return (
-        <>
+        <ul>
             {
             products.map((product) => {
                 return (
@@ -25,7 +26,7 @@ const Products = () => {
                 );
             })
             }
-        </>
+        </ul>
     );
 };
 
