@@ -4,17 +4,12 @@ import Product from '../Product/Product';
 import './Products.css';
 
 const Products = () => {
-    // state setter and getter
     const [products, setProducts] = useState([]);
 
     useEffect( () => {
         fetchProducts()
-            .then( (productsData) => {
-                setProducts(productsData);
-            })
-            .catch((err) => {
-                err.message = 'Error! Could not resolve promise.';
-            });
+            .then(productsData => setProducts(productsData))
+            .catch(err => err.message = 'Error! Could not resolve promise.');
     }, []);
 
     return (
