@@ -1,5 +1,3 @@
-import './Characters.css';
-
 const Characters = () => {
     return (
         <div id="characters">

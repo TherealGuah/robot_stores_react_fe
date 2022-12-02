@@ -1,5 +1,3 @@
-import './Product.css';
-
 const Product = (props) => {
     let {
         id,
@@ -10,7 +8,7 @@ const Product = (props) => {
 
     return (
         <li id={id}>
-            <a href="">
+            <a href="https://www.google.com">
                 <img src={image} alt='product'/>
                 <h3>{title}</h3>
                 <p>{price}</p>

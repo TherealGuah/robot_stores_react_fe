@@ -1,5 +1,3 @@
-import './Categories.css';
-
 const Categories = () => {
     return (
         <div id="categories">

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { fetchProducts } from '../../utils/apiRequests';
 import Product from '../Product/Product';
-import './Products.css';
 
 const Products = () => {
     const [products, setProducts] = useState([]);
