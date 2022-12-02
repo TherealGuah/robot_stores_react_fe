@@ -1,25 +1,65 @@
-main {
+body {
+  background-color: #04293A;
+  color: #ECB365;
+}
+body img {
+  width: 100%;
+}
+body header {
+  background-color: #ECB365;
+  color: #04293A;
+  line-height: 1.375;
+}
+body header .header-wrapper {
+  width: 95%;
+  padding: 0 2rem;
+  margin: auto;
+}
+body main {
+  background-color: #041C32;
   width: 80%;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
 }
-main ul {
+body main ul {
   padding: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
-main ul a {
+body main ul a {
   text-decoration: none;
   color: inherit;
 }
-main ul li {
+body main ul li {
   list-style: none;
+  display: flex;
+  flex-flow: column wrap;
 }
-main img {
-  width: 100%;
-  height: auto;
+
+@media screen and (min-width: 700px) {
+  li {
+    max-width: 12.5rem;
+    padding: 0 0.5rem;
+    margin: 0.5rem;
+  }
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .header-wrapper .header-text {
+    width: 80%;
+    padding: 1.5rem 0;
+    margin-right: 3rem;
+  }
+  .header-wrapper .header-text h1 {
+    margin-bottom: 1rem;
+  }
+  .header-wrapper .header-image {
+    align-self: center;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */
