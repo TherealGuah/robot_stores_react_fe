@@ -23,7 +23,7 @@ body main {
   flex-flow: row wrap;
 }
 body main ul {
-  padding: 0;
+  padding: 1.5rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
