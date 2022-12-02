@@ -1,30 +1,45 @@
+// --- Dark Theme
+$background-dark: #041C32;
+$base-dark: #04293A;
+$border-dark: #064663;
+$text-dark: #ECB365;
+
+// Light Theme
+$background-light: #FAF2DA;
+$base-light: #E28F83;
+$border-light: #8E9775;
+$text-light: #4A503D;
+
 main {
     width: 80%;
     margin: 0 auto;
 
     display: flex;
     flex-flow: row wrap;
-}
 
-ul {
-    padding: 0;
+    ul {
+        padding: 0;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
 
-    a {
-        text-decoration: none;
-        color: inherit;
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        li {
+            list-style: none;
+        }
     }
 
-    li {
-        list-style: none;
+    img {
+        width: 100%;
+        height: auto;
     }
 }
 
 
-img {
-    width: 100%;
-    height: auto;
-}
+
+
