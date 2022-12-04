@@ -10,10 +10,10 @@ const Body = () => {
             <Header />
 
             <main>
-                <form>
+                <div>
                     <Categories />
                     <Characters />
-                </form>
+                </div>
                 <Products />
             </main>
 
