@@ -21,6 +21,7 @@ body main {
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
+  justify-content: flex-start;
 }
 body main ul {
   padding: 1.5rem;
@@ -37,6 +38,14 @@ body main ul li {
   list-style: none;
   display: flex;
   flex-flow: column wrap;
+}
+body main div {
+  display: flex;
+  flex-direction: column;
+}
+body main div form {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 700px) {

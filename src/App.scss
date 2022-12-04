@@ -38,6 +38,7 @@ body {
 
         display: flex;
         flex-flow: row wrap;
+        justify-content: flex-start;
 
         ul {
             padding: 1.5rem;
@@ -56,6 +57,16 @@ body {
                 list-style: none;
                 display:flex;
                 flex-flow: column wrap;
+            }
+        }
+        div {
+
+            display: flex;
+            flex-direction: column;
+
+            form {
+                display: flex;
+                flex-direction: column;
             }
         }
     }
