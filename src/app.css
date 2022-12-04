@@ -28,31 +28,37 @@ body main ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 body main ul a {
   text-decoration: none;
   color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 body main ul li {
   list-style: none;
-  display: flex;
-  flex-flow: column wrap;
 }
 body main div {
-  display: flex;
-  flex-direction: column;
+  width: fit-content;
 }
-body main div form {
+body main form {
   display: flex;
   flex-direction: column;
+  padding-left: 1.5rem;
 }
 
 @media screen and (min-width: 700px) {
-  li {
+  main {
+    flex-direction: row;
+  }
+  main div {
+    width: 20%;
+  }
+  main li {
     max-width: 12.5rem;
-    padding: 0 0.5rem;
-    margin: 0.5rem;
+    padding: 0 1rem;
   }
   .header-wrapper {
     display: flex;
