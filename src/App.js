@@ -1,10 +1,15 @@
 import './app.css';
-import Body from './components/Body';
+import {Route, Routes} from "react-router-dom";
+import Body from "./components/Body";
+import PageNotFound from "./components/PageNotFound";
 
 function App() {
   return (
     <>
-      <Body />
+        <Routes>
+            <Route path="/" element={<Body />} />
+            <Route path="*" element={<PageNotFound />} />
+        </Routes>
     </>
   );
 }
