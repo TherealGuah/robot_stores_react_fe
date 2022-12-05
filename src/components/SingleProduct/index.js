@@ -11,7 +11,7 @@ const SingleProduct = () => {
             .then(product => setProduct(product[0]))
             .catch(err => err.message = 'Error! Could not resolve promise.');
     }, []);
-    console.log(product);
+
     const {
          _id, id, title, price, image, category_id, category,
         character_id, character, description, image2, image3
