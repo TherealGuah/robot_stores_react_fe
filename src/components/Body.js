@@ -1,22 +1,15 @@
-import Header from './Header/Header';
-import Categories from "./Categories/Categories";
-import Characters from "./Characters/Characters";
-import Products from './Products/Products';
-import Footer from './Footer/Footer';
+import React from 'react';
+import Products from './Products';
+import Header from './Header';
+import Footer from './Footer';
 
 const Body = () => {
     return (
         <>
             <Header />
-
             <main>
-                <div>
-                    <Categories />
-                    <Characters />
-                </div>
                 <Products />
             </main>
-
             <Footer />
         </>
     );
