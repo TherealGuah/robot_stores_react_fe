@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
-import { fetchProducts } from '../../utils/apiRequests';
-import Product from '../Product/Product';
-import Categories from "../Categories/Categories";
-import Characters from "../Characters/Characters";
+import React, { useEffect, useState } from "react";
+import Product from '../Product';
+import Categories from "../Categories";
+import Characters from "../Characters";
+import { fetchProducts } from "../../utils/apiRequests";
 
 const Products = () => {
     const [products, setProducts] = useState([]);
@@ -12,7 +12,7 @@ const Products = () => {
             .then(productsData => setProducts(productsData))
             .catch(err => err.message = 'Error! Could not resolve promise.');
     }, []);
-
+    
     return (
         <>
             <div>
@@ -21,11 +21,11 @@ const Products = () => {
             </div>
             <ul>
                 {
-                products.map((product) => {
-                    return (
-                        <Product product={product} key={product.id}/>
-                    );
-                })
+                    products.map((product, index) => {
+                        return (
+                            <Product product={product} key={index}/>
+                        );
+                    })
                 }
             </ul>
         </>
