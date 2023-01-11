@@ -1,12 +1,13 @@
-const Categories = () => {
+const Categories = ({handleAprons, handleHats}) => {
+
     return (
         <form>
             <div>
-                <input type="checkbox" id="aprons" name="aprons" />
+                <input type="checkbox" id="aprons" name="aprons" onChange={handleAprons}/>
                 <label htmlFor="bubbles">Aprons</label>
             </div>
             <div>
-                <input type="checkbox" id="hats" name="hats" />
+                <input type="checkbox" id="hats" name="hats" onChange={handleHats}/>
                 <label htmlFor="bubbles">Baseball Hats</label>
             </div>
             <div>
