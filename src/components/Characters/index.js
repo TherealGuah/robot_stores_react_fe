@@ -1,21 +1,23 @@
-const Characters = () => {
+const Characters = (props) => {
+    const { handleChange } = props;
+
     return (
         <form>
             <div>
-                <input type="checkbox" id="bubbles" name="bubbles"  checked={true}/>
-                <label htmlFor="bubbles">Bubbles</label>
+                <input type="checkbox" id="Bubbles" name="Bubbles" onChange={handleChange} defaultChecked={true}/>
+                <label htmlFor="Bubbles">Bubbles</label>
             </div>
             <div>
-                <input type="checkbox" id="dolores" name="dolores"  checked={true}/>
+                <input type="checkbox" id="Dolores" name="Dolores" onChange={handleChange} defaultChecked={true} />
                 <label htmlFor="bubbles">Dolores</label>
             </div>
             <div>
-                <input type="checkbox" id="fred" name="fred"  checked={true}/>
-                <label htmlFor="bubbles">Fred</label>
+                <input type="checkbox" id="Fred" name="Fred" onChange={handleChange} defaultChecked={true} />
+                <label htmlFor="Fred">Fred</label>
             </div>
             <div>
-                <input type="checkbox" id="rex" name="rex"  checked={true}/>
-                <label htmlFor="bubbles">Rex</label>
+                <input type="checkbox" id="Rex" name="Rex" onChange={handleChange} defaultChecked={true} />
+                <label htmlFor="Rex">Rex</label>
             </div>
         </form>
     );
