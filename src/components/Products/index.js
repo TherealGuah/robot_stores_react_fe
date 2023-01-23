@@ -3,11 +3,12 @@ import Product from '../Product';
 import Categories from "../Categories";
 import Characters from "../Characters";
 import { fetchProducts } from "../../utils/apiRequests";
+import {filterProducts} from "../../utils/utils";
 
 const Products = () => {
 
     const [products, setProducts] = useState([]);
-    const [checkboxState, setCheckboxState] = useState(
+    const [categories, setCategories] = useState(
         {
             'Aprons': true,
             'Hats': true,
@@ -21,9 +22,9 @@ const Products = () => {
 
     const handleChange = (event) => {
         let category = event.target.id;
-        let newState = checkboxState;
+        let newState = categories;
         newState[category] = event.target.checked;
-        setCheckboxState((prevState) => {
+        setCategories((prevState) => {
             return {...prevState, ...newState};
         });
     }
@@ -32,46 +33,10 @@ const Products = () => {
         fetchProducts()
             .then(productsData => setProducts(productsData))
             .catch(err => err.message = 'Error! Could not resolve promise.');
-    }, [checkboxState]);
+    }, [categories]);
 
-    console.log(products);
-
-    const filterProducts = (productsToFilter, categories) => {
-        let filteredProducts = productsToFilter;
-
-        if (!categories['Aprons']) {
-            filteredProducts = products.filter(product => product.category_id !== 1);
-        }
-        if (!categories['Hats']) {
-            filteredProducts = products.filter(product => product.category_id !== 2);
-        }
-        if (!categories['Mugs']) {
-            filteredProducts = products.filter(product => product.category_id !== 3);
-        }
-        if (!categories['Shirts']) {
-            filteredProducts = products.filter(product => product.category_id !== 4);
-        }
-        if (!categories['Fred']) {
-            filteredProducts = products.filter(product => product.character_id !== 1);
-        }
-        if (!categories['Bubbles']) {
-            filteredProducts = products.filter(product => product.character_id !== 2);
-        }
-        if (!categories['Dolores']) {
-            filteredProducts = products.filter(product => product.character_id !== 3);
-        }
-        if (!categories['Rex']) {
-            filteredProducts = products.filter(product => product.character_id !== 4);
-        }
-
-        return filteredProducts;
-    }
-
-    let filteredProducts = filterProducts(products, checkboxState);
-
-    console.log(checkboxState);
-    console.log(filteredProducts);
-
+    let filteredProducts = filterProducts(products, categories);
+    
     return (
         <>
             <div>
