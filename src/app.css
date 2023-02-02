@@ -2,6 +2,10 @@ body {
   background-color: #04293A;
   color: #ECB365;
 }
+body a {
+  text-decoration: none;
+  color: inherit;
+}
 body img {
   width: 100%;
 }
@@ -30,15 +34,13 @@ body main ul {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-body main ul a {
-  text-decoration: none;
-  color: inherit;
+body main ul li {
+  list-style: none;
+}
+body main ul li a {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-}
-body main ul li {
-  list-style: none;
 }
 body main div {
   width: fit-content;
@@ -77,4 +79,4 @@ body main form {
   }
 }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=app.css.map */

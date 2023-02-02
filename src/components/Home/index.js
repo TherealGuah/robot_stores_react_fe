@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom';
 import React from "react";
 import {ReactComponent as RobotLogo} from './robot_logo.svg';
 const Home = () => {
-    
+
     // TODO: Style Home Page
     return (
         <>

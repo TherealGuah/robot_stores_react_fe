@@ -14,6 +14,11 @@ body {
     background-color: $base-dark;
     color: $text-dark;
 
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
     img {
         width: 100%;
     }
@@ -48,17 +53,14 @@ body {
             flex-wrap: wrap;
             justify-content: space-around;
 
-            a {
-                text-decoration: none;
-                color: inherit;
-                display: flex;
-                flex-direction: column;
-                align-items: stretch;
-            }
-
             li {
                 list-style: none;
 
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: stretch;
+                }
             }
         }
         div {
