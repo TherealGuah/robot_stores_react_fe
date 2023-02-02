@@ -144,7 +144,54 @@ body {
 
     }
 
+    // -- <SingleProduct />
+    #product {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 3rem 3rem 1fr 3rem 3rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        justify-items: center;
+        align-items: center;
 
+        img {
+            grid-area: 3 / 1 / 4 / 2;
+            min-width: 200px;
+        }
+
+        h1 {
+            grid-area: 2 / 1 / 3 / 3;
+            text-decoration: underline 2px solid $text-dark;
+            padding: 1rem 0;
+            border-top: 2px solid $text-dark;
+            width: fit-content;
+            text-align: center;
+        }
+
+        p {
+            grid-area: 3 / 2 / 4/ 3;
+            align-self: center;
+            width: 80%;
+        }
+
+        a {
+            grid-area: 4 / 1 / 5 / 2;
+            align-self: end;
+
+            h2 {
+                padding: 1rem;
+                border: 2px solid $text-dark;
+                border-radius: 25px;
+            }
+
+            h2:hover {
+                color: $base-dark;
+                background-color: $text-dark;
+            }
+
+        }
+    }
 }
 
 @media screen and (min-width: 700px) {

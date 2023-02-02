@@ -21,12 +21,12 @@ const SingleProduct = () => {
     };
 
     return (
-        <div>
+        <div id="product">
             <img src={image} alt="image of product"/>
             <h1>{title}</h1>
             <p>{description}</p>
             <Link to='/products'>
-                <button onClick={handleBack}>Back</button>
+                <h2>Back</h2>
             </Link>
         </div>
     );
