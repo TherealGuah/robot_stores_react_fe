@@ -12,7 +12,7 @@ const Header = () => {
                     </p>
                 </div>
                 <div className="header-image">
-                    <img src="https://www.binaryville.com/images/product-montage.png" alt="something to see"/>
+                    <img src="https://www.binaryville.com/images/product-montage.png" alt="Robot Store Merchandise"/>
                 </div>
             </div>
         </header>
