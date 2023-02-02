@@ -5,10 +5,10 @@ $border-dark: #064663;
 $text-dark: #ECB365;
 
 // Light Theme
-$background-light: #FAF2DA;
-$base-light: #E28F83;
-$border-light: #8E9775;
-$text-light: #4A503D;
+//$background-light: #FAF2DA;
+//$base-light: #E28F83;
+//$border-light: #8E9775;
+//$text-light: #4A503D;
 
 body {
     background-color: $base-dark;
@@ -22,7 +22,46 @@ body {
     img {
         width: 100%;
     }
+    // -- <Home /> styles
+    #home {
+        width: 80%;
+        height: 100vh;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
 
+        h1 {
+            text-decoration: underline 2px solid $text-dark;
+            padding: 1rem 0;
+            border-top: 2px solid $text-dark;
+            width: fit-content;
+            margin: 0 auto;
+            font-size: 2rem;
+        }
+        svg {
+            max-width: 50px;
+            margin: 0 auto;
+        }
+
+        img {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        a {
+            border: 2px solid $text-dark;
+            border-radius: 25px;
+            width: 50%;
+            align-self: center;
+        }
+        a:hover {
+            color: $base-dark;
+            background-color: $text-dark;
+        }
+    }
+    // --
     header {
         background-color: $text-dark;
         color: $base-dark;
