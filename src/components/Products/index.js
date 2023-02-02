@@ -39,7 +39,7 @@ const Products = () => {
     
     return (
         <>
-            <div>
+            <div id="categories">
                 <Categories handleChange={handleChange}/>
                 <Characters handleChange={handleChange}/>
             </div>
