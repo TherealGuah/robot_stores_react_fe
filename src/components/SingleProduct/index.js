@@ -12,13 +12,9 @@ const SingleProduct = () => {
             .catch(err => err.message = 'Error! Could not resolve promise.');
     }, []);
 
-    const {
-         _id, id, title, price, image, category_id, category,
-        character_id, character, description, image2, image3
+    const {title, price, image, category,
+        character, description
     } = product;
-    const handleBack = (ev) => {
-
-    };
 
     return (
         <div id="product">
