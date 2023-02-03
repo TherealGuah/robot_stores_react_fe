@@ -22,7 +22,7 @@ const SingleProduct = () => {
             <h1>{title}</h1>
             <p>{description}</p>
             <Link to='/products'>
-                <h2>Back</h2>
+                <h2>Back to Products</h2>
             </Link>
         </div>
     );

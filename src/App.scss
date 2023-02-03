@@ -183,7 +183,7 @@ body {
             align-self: end;
 
             h2 {
-                padding: 1rem;
+                padding: 0.5rem;
                 border: 2px solid $text-dark;
                 border-radius: 25px;
             }
@@ -199,9 +199,7 @@ body {
 
 @media screen and (min-width: 700px) {
     main {
-
         flex-direction: row;
-        //flex-wrap: nowrap;
 
         div {
             width:20%;

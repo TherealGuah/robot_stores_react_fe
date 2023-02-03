@@ -147,7 +147,7 @@ body #product a {
   align-self: end;
 }
 body #product a h2 {
-  padding: 1rem;
+  padding: 0.5rem;
   border: 2px solid #ECB365;
   border-radius: 25px;
 }
