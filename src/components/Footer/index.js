@@ -1,6 +1,10 @@
+import {Link} from "react-router-dom";
+
 const Footer = () => {
     return (
-        <footer id="footer"></footer>
+        <Link id="homeButton" to={"/"}>
+            <h1>Home</h1>
+        </Link>
     );
 };
 

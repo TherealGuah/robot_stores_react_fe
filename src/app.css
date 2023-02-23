@@ -112,6 +112,20 @@ body main form {
   display: flex;
   flex-direction: column;
 }
+body #homeButton {
+  padding: 1.5rem;
+  border: 2px solid #ECB365;
+  border-radius: 25px;
+  margin: 2rem auto;
+  width: 25%;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
+body #homeButton:hover {
+  color: #04293A;
+  background-color: #ECB365;
+}
 body #product {
   width: 100vw;
   height: 100vh;

@@ -144,6 +144,23 @@ body {
 
     }
 
+    #homeButton {
+        padding: 1.5rem;
+        border: 2px solid $text-dark;
+        border-radius: 25px;
+        margin: 2rem auto;
+        width: 25%;
+        display: block;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #homeButton:hover {
+        color: $base-dark;
+        background-color: $text-dark;
+    }
+
+
     // -- <SingleProduct />
     #product {
         width: 100vw;
